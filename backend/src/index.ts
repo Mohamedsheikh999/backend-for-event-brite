@@ -5,7 +5,7 @@ import { PrismaClient } from './generated/prisma';
 import bcrypt from 'bcryptjs';
 import jwt from 'jsonwebtoken';
 
-dotenv.config();
+dotenv.config
 
 const app = express();
 const PORT = process.env.PORT || 4000;
@@ -206,6 +206,6 @@ app.use((err: any, req: Request, res: Response, next: NextFunction) => {
   res.status(500).json({ error: 'Something went wrong!' });
 });
 
-app.listen(PO () => {
+app.listen(PORT, () => {
   console.log(`Server running on port ${PORT}`);
 }); 
